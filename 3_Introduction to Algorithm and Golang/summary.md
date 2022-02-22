@@ -23,7 +23,7 @@ berikut hasil pengerjaan di website whimsical pada [file txt](./praktikum/1.link
 
 Gambar flowchart :
 
-![Prima](./screenshots/1.flowchart-bilangan-prima.png) <img src="./screenshots/1.flowchart-bilangan-prima.png" width="400">
+<img src="./screenshots/1.flowchart-bilangan-prima.png" width="500">
 
 ### 2. Flowchart Lampu dan Tombol
 pada task ini, membuat flowchart untuk lampu dan tombol dengan permasalahan berikut :  
@@ -43,4 +43,4 @@ berikut hasil pengerjaan di website whimsical pada [file txt](./praktikum/1.link
 
 Gambar Flowchart :
 
-![Lampu Tombol](./screenshots/2.flowchart-lampu-tombol.png)
+<img src="./screenshots/2.flowchart-lampu-tombol.png" width="500">
