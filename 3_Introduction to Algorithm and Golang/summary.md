@@ -28,6 +28,7 @@ Gambar flowchart :
 ### 2. Flowchart Lampu dan Tombol
 pada task ini, membuat flowchart untuk lampu dan tombol dengan permasalahan berikut :  
 > Terdapat N tombol yang dinomori dari 1 hingga N dan sebuah lampu dalam keadaan mati. Apabila tombol ke-i ditekan, keadaan lampu akan berubah (dari mati menjadi menyala, atau sebaliknya) jika N habis dibagi oleh i. Apabila masing-masing tombol ditekan tepat sekali, bagaimana keadaan lampu pada akhirnya ?  
+
 contoh masukan :  
 5  
 contoh keluaran :  
