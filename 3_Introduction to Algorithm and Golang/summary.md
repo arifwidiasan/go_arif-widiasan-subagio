@@ -58,6 +58,10 @@ pada task ini, buat aplikasi "hello, world" dan implementasikan command berikut 
 go build  
 go install
 
+Berikut kode hasil dari task ini :
+
+[hello.go](./praktikum/Program Go/hello.go)
+
 Output :
 
 <img src="./screenshots/4.hello-world.jpg" width="900">
