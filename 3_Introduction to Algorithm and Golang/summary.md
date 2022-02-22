@@ -17,7 +17,7 @@ Pseudocode adalah penulisan algoritma dengan deskripsi Bahasa sederhana yang dap
 
 ## Task
 ### 1. Flowchart Bilangan Prima
-pada task ini, membuat flowchart untuk menentukan bilangan prima menggunakan [whimsical.com](whimsical.com)
+pada task ini, membuat flowchart untuk menentukan bilangan prima menggunakan [whimsical.com](https://whimsical.com/)
 
 berikut hasil pengerjaan di website whimsical pada [file txt](./praktikum/1.link-whimsical-prima.txt) atau [tautan berikut](https://whimsical.com/bilangan-prima-Ezr7CbKDebDfMK7Kii8Kho)
 
