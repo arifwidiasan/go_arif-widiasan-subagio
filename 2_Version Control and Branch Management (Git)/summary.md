@@ -20,8 +20,8 @@ Pada section ini, task yang diberikan adalah untuk membuat repository Github dan
 
 Berikut link repository yang telah dibuat:
 
-[file](./praktikum/link repository.txt) atau langsung ke alamat [repository](https://github.com/arifwidiasan/tugas1-git)
+[file](./praktikum/link-repository.txt) atau langsung ke alamat [repository](https://github.com/arifwidiasan/tugas1-git)
 
 Screenshot Git Graph repository:
 
-![Graph](./screenshots/Screenshot Git Graph.png)
+![Graph](./screenshots/Git-Graph.png)
