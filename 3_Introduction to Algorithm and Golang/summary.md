@@ -54,10 +54,10 @@ Bukti Install :
 
 ### 4. Hello World
 pada task ini, buat aplikasi "hello, world" dan implementasikan command berikut !
-> go run
-go build
+> go run  
+go build  
 go install
 
 Output :
 
-<img src="./screenshots/4.hello-world.jpg" width="750">
+<img src="./screenshots/4.hello-world.jpg" width="900">
