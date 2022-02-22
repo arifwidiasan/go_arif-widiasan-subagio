@@ -51,3 +51,13 @@ pada task ini, install Golang di PC masing - masing, untuk golang sendiri bisa d
 Bukti Install :
 
 <img src="./screenshots/3.install-go.jpg" width="350">
+
+### 4. Hello World
+pada task ini, buat aplikasi "hello, world" dan implementasikan command berikut !
+> go run
+go build
+go install
+
+Output :
+
+<img src="./screenshots/4.hello-world.jpg" width="750">
