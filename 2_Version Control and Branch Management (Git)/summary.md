@@ -19,7 +19,9 @@ Syncing pada git pada umumnya digunakan untuk menambah dan mengambil commit atau
 Pada section ini, task yang diberikan adalah untuk membuat repository Github dan mengimplementasikan penggunaan branching yang terdiri dari master, development, featureA, featureB. Lalu implementasikan instruksi git untuk push, pull, stash dan merge. selain itu juga implementasikan sebuah conflict di branch saat melakukan merge.
 
 Berikut link repository yang telah dibuat:
-[file.txt](./praktikum/link repository.txt) atau langsung ke alamat [repository](https://github.com/arifwidiasan/tugas1-git)
+
+[file](./praktikum/link repository.txt) atau langsung ke alamat [repository](https://github.com/arifwidiasan/tugas1-git)
 
 Screenshot Git Graph repository:
+
 ![Graph](./screenshots/Screenshot Git Graph.png)
