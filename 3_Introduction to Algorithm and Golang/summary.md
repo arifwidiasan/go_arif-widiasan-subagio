@@ -60,7 +60,7 @@ go install
 
 Berikut kode hasil dari task ini :
 
-[hello.go](./praktikum/Program Go/hello.go)
+[hello.go](./praktikum/Program_Go/hello.go)
 
 Output :
 
