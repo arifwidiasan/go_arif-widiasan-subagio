@@ -23,7 +23,7 @@ berikut hasil pengerjaan di website whimsical pada [file txt](./praktikum/1.link
 
 Gambar flowchart :
 
-![Prima](./screenshots/1.flowchart-bilangan-prima.png)
+![Prima](./screenshots/1.flowchart-bilangan-prima.png) <img src="/screenshots/1.flowchart-bilangan-prima.png" width="400">
 
 ### 2. Flowchart Lampu dan Tombol
 pada task ini, membuat flowchart untuk lampu dan tombol dengan permasalahan berikut :  
@@ -39,7 +39,7 @@ contoh keluaran :
 lampu menyala  
 
 
-berikut hasil pengerjaan di website whimsical pada [file txt](./praktikum/1.link-whimsical-prima.txt) atau [tautan berikut](https://whimsical.com/lampu-tombol-VtjEzeBjECb9CJHTLciuAV)
+berikut hasil pengerjaan di website whimsical pada [file txt](./praktikum/1.link-whimsical-tombol.txt) atau [tautan berikut](https://whimsical.com/lampu-tombol-VtjEzeBjECb9CJHTLciuAV)
 
 Gambar Flowchart :
 
