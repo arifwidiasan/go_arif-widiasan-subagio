@@ -44,3 +44,10 @@ berikut hasil pengerjaan di website whimsical pada [file txt](./praktikum/1.link
 Gambar Flowchart :
 
 <img src="./screenshots/2.flowchart-lampu-tombol.png" width="500">
+
+### 3. Install Golang
+pada task ini, install Golang di PC masing - masing, untuk golang sendiri bisa download [disini](https://go.dev/)
+
+Bukti Install :
+
+<img src="./screenshots/3.install-go.jpg" width="350">
