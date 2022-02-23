@@ -31,11 +31,12 @@ Hasil kode program :
 
 ### 2. Grade Nilai
 Seorang pengajar sedang memeriksa ujian siswa dan akan memberikan deskripsi nilai dari A-E dengan ketentuan sebagai berikut : 
-> - Nilai 80-100 : A
-- Nilai 65-79 : B
-- Nilai 50-64 : C
-- Nilai 35-49 : D
-- Nilai 0-34 : E
+> Nilai 80-100 : A  
+Nilai 65-79 : B  
+Nilai 50-64 : C  
+Nilai 35-49 : D  
+Nilai 0-34 : E
+
 Tampilkan deskripsi Nilai dan Nama siswa saat pengajar tersebut memasukkan nilai dan nama yang dia inginkan.
 
 Berikut kode hasil dari task ini :
