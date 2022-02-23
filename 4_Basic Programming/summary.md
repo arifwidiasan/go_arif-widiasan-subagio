@@ -21,7 +21,7 @@ Buatlah sebuah program untuk menghitung luas permukaan tabung !. setelah program
 > input : T = 20, r = 4  
 output : 602.88
 
-Berikut kode hasil dari task ini :
+Berikut kode dari task ini :
 
 [luasTabung.go](./praktikum/1_luasTabung/luasTabung.go)
 
@@ -39,7 +39,7 @@ Nilai 0-34 : E
 
 Tampilkan deskripsi Nilai dan Nama siswa saat pengajar tersebut memasukkan nilai dan nama yang dia inginkan.
 
-Berikut kode hasil dari task ini :
+Berikut kode dari task ini :
 
 [gradeNilai.go](./praktikum/2_gradeNilai/gradeNilai.go)
 
@@ -58,7 +58,7 @@ output :
 10  
 20
 
-Berikut kode hasil dari task ini :
+Berikut kode dari task ini :
 
 [faktorBilangan.go](./praktikum/3_faktorBilangan/faktorBilangan.go)
 
@@ -75,10 +75,42 @@ fmt.Println(primeNumber(20)) // false
 fmt.Println(primeNumber(35)) // false  
 fmt.Println(primeNumber(1)) // false
 
-Berikut kode hasil dari task ini :
+Berikut kode dari task ini :
 
 [prima.go](./praktikum/4_prima/prima.go)
 
 Hasil kode program :
 
 <img src="./screenshots/4_prima.jpg" width="900">
+
+### 5. Palindrome
+kata palindrome adalah sebuah kata yang jika dibalik, tetap sama. contoh 'katak' dibalik tetaplah 'katak'. pada task ini, buatlah program untuk mendeteksi sebuah string termasuk palindrome atau tidak !
+> fmt.Println(palindrome("civic")) // true  
+fmt.Println(palindrome("katak")) // true  
+fmt.Println(palindrome("kasur rusak")) // true  
+fmt.Println(palindrome("mistar")) // false  
+fmt.Println(palindrome("lion")) // false
+
+Berikut kode dari task ini :
+
+[palindrome.go](./praktikum/5_palindrome/palindrome.go)
+
+Hasil kode program :
+
+<img src="./screenshots/5_palindrome.jpg" width="900">
+
+### 6. Exponentiation
+pada task ini, buatlah fungsi untuk menghitung pangkat bilangan (contoh: x^n)
+> fmt.Println(pangkat(2, 3)) // 8  
+fmt.Println(pangkat(5, 3)) // 125  
+fmt.Println(pangkat(10, 2)) // 100  
+fmt.Println(pangkat(2, 5)) // 32  
+fmt.Println(pangkat(7, 3)) // 343
+
+Berikut kode dari task ini :
+
+[pangkat.go](./praktikum/6_pangkat/pangkat.go)
+
+Hasil kode program :
+
+<img src="./screenshots/6_pangkat.jpg" width="900">
