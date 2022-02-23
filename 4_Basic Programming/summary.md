@@ -119,11 +119,7 @@ Hasil kode program :
 pada task ini, buatlah program untuk mencetak segitiga asterisk seperti berikut
 > input : 5  
 output :  
-    *  
-   **  
-  * * *  
- * * * *  
-* * * * *  
+<img src="./screenshots/contoh_output_asterisk.jpg">
 
 Berikut kode dari task ini :
 
