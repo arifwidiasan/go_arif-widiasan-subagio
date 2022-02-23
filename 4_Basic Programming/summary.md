@@ -27,4 +27,21 @@ Berikut kode hasil dari task ini :
 
 Hasil kode program :
 
-<img src="./screenshots/1_luas_tabung.jpg" width="600">
+<img src="./screenshots/1_luas_tabung.jpg" width="900">
+
+### 2. Grade Nilai
+Seorang pengajar sedang memeriksa ujian siswa dan akan memberikan deskripsi nilai dari A-E dengan ketentuan sebagai berikut : 
+> - Nilai 80-100 : A
+- Nilai 65-79 : B
+- Nilai 50-64 : C
+- Nilai 35-49 : D
+- Nilai 0-34 : E
+Tampilkan deskripsi Nilai dan Nama siswa saat pengajar tersebut memasukkan nilai dan nama yang dia inginkan.
+
+Berikut kode hasil dari task ini :
+
+[gradeNilai.go](./praktikum/2_gradeNilai/gradeNilai.go)
+
+Hasil kode program :
+
+<img src="./screenshots/2_grade_nilai.jpg" width="900">
