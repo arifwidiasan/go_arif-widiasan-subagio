@@ -46,3 +46,22 @@ Berikut kode hasil dari task ini :
 Hasil kode program :
 
 <img src="./screenshots/2_grade_nilai.jpg" width="900">
+
+### 3. Faktor Bilangan
+pada task ini, buatlah program untuk mencetak faktor sebuah bilangan.
+> input : 20  
+output :  
+1  
+2  
+4  
+5  
+10  
+20
+
+Berikut kode hasil dari task ini :
+
+[faktorBilangan.go](./praktikum/3_faktorBilangan/faktorBilangan.go)
+
+Hasil kode program :
+
+<img src="./screenshots/3_faktor_bilangan.jpg" width="900">
