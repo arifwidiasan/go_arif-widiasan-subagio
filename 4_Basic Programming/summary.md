@@ -101,13 +101,12 @@ Hasil kode program :
 
 ### 6. Exponentiation
 pada task ini, buatlah fungsi untuk menghitung pangkat bilangan (contoh: x^n)
-'''
-fmt.Println(pangkat(2, 3)) // 8  
+> fmt.Println(pangkat(2, 3)) // 8  
 fmt.Println(pangkat(5, 3)) // 125  
 fmt.Println(pangkat(10, 2)) // 100  
 fmt.Println(pangkat(2, 5)) // 32  
 fmt.Println(pangkat(7, 3)) // 343
-'''
+
 Berikut kode dari task ini :
 
 [pangkat.go](./praktikum/6_pangkat/pangkat.go)
