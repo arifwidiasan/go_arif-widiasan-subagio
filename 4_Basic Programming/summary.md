@@ -114,3 +114,21 @@ Berikut kode dari task ini :
 Hasil kode program :
 
 <img src="./screenshots/6_pangkat.jpg" width="900">
+
+### 7. Play with Asterisk
+pada task ini, buatlah program untuk mencetak segitiga asterisk seperti berikut
+> input : 5  
+output :  
+    *  
+   **  
+  * * *  
+ * * * *  
+* * * * *  
+
+Berikut kode dari task ini :
+
+[asterisk.go](./praktikum/7_asterisk/asterisk.go)
+
+Hasil kode program :
+
+<img src="./screenshots/7_asterisk.jpg" width="900">
