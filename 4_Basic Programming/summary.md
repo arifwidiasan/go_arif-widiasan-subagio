@@ -65,3 +65,20 @@ Berikut kode hasil dari task ini :
 Hasil kode program :
 
 <img src="./screenshots/3_faktor_bilangan.jpg" width="900">
+
+### 4. Bilangan Prima
+pada task ini, buatlah fungsi untuk menentukan bahwa sebuah bilangan termasuk bilangan prima atau tidak.
+> fmt.Println(primeNumber(11)) // true  
+fmt.Println(primeNumber(13)) // true  
+fmt.Println(primeNumber(17)) // true  
+fmt.Println(primeNumber(20)) // false  
+fmt.Println(primeNumber(35)) // false  
+fmt.Println(primeNumber(1)) // false
+
+Berikut kode hasil dari task ini :
+
+[prima.go](./praktikum/4_prima/prima.go)
+
+Hasil kode program :
+
+<img src="./screenshots/4_prima.jpg" width="900">
