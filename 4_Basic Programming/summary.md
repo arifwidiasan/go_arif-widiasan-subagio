@@ -21,11 +21,11 @@ Buatlah sebuah program untuk menghitung luas permukaan tabung !. setelah program
 > input : T = 20, r = 4  
 output : 602.88
 
-Berikut kode hasil dari task ini :
+- Berikut kode hasil dari task ini :
 
 [luasTabung.go](./praktikum/1_luasTabung/luasTabung.go)
 
-Hasil kode program :
+- Hasil kode program :
 
 <img src="./screenshots/1_luas_tabung.jpg" width="900">
 
@@ -39,10 +39,10 @@ Nilai 0-34 : E
 
 Tampilkan deskripsi Nilai dan Nama siswa saat pengajar tersebut memasukkan nilai dan nama yang dia inginkan.
 
-Berikut kode hasil dari task ini :
+- Berikut kode hasil dari task ini :
 
 [gradeNilai.go](./praktikum/2_gradeNilai/gradeNilai.go)
 
-Hasil kode program :
+- Hasil kode program :
 
 <img src="./screenshots/2_grade_nilai.jpg" width="900">
