@@ -21,3 +21,17 @@ setiap time complexity memiliki waktu eksekusi yang berbeda-beda dan dapat dilih
 
 ### Space Complexity
 Memory limit memberikan informasi untuk memperkirakan space complexity. kita bisa memperkirakan banyak variabel yang kamu deklarasikan pada program, dengan kata lain jika kita memiliki angka konstan variabel maka kita juga mempunyai space complexity yang konstan
+
+## Task
+### 1. Bilangan Prima
+pada task ini, buatlah program untuk menentukan bilangan tersebut termasuk bilangan prima atau tidak dengan kompleksitas lebih cepat dari O(n) atau O(n/2)
+>input : 1000000007  
+Output: Bilangan Prima
+
+Berikut kode dari task ini :
+
+[prime.go](./praktikum/1_primeNumber/prime.go)
+
+Hasil kode program :
+
+<img src="./screenshots/1_prima.jpg" width="900">
