@@ -35,3 +35,22 @@ Berikut kode dari task ini :
 Hasil kode program :
 
 <img src="./screenshots/1_prima.jpg" width="900">
+
+### 1. Fast Exponentiation
+pada task ini, buatlah fungsi program untuk menghitung x^n dengan kompleksitas lebih optimal dari O(n) yaitu logarithmic time (O(log n))
+>input : x = 2, n = 3  
+Output: 8
+>fmt.Println(pow(2, 3))  // 8
+fmt.Println(pow(5, 3))  // 125
+fmt.Println(pow(10, 2)) // 100
+fmt.Println(pow(2, 5))  // 32
+fmt.Println(pow(7, 3))  // 343
+
+
+Berikut kode dari task ini :
+
+[fastExp.go](./praktikum/2_fastExponentiation/fastExp.go)
+
+Hasil kode program :
+
+<img src="./screenshots/2_fast_exp.jpg" width="900">
