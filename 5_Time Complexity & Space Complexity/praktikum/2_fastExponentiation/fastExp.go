@@ -6,7 +6,7 @@ func pow(x, n int) int {
 	hasil := 1
 
 	for n > 0 {
-		if (n & 1) == 1 {
+		if n%2 == 1 {
 			hasil = hasil * x
 		}
 		n = n / 2
