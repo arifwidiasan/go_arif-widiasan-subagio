@@ -14,7 +14,7 @@ ada banyak sekali jenis time complexity, antara lain adalah :
 - Constant Time : O(i)
 - Linear Time : O(n) atau O(n+m)
 - Logarithmic Time : O(log n)
-- Quadratic Time : O(n^2)
+- Quadratic Time : O(n^2)  
 setiap time complexity memiliki waktu eksekusi yang berbeda-beda dan dapat dilihat pada gambar berikut
 
 <img src="https://i.imgur.com/EoBwqWm.jpeg">
