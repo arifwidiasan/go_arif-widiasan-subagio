@@ -9,7 +9,7 @@ func pow(x, n int) int {
 		if (n & 1) == 1 {
 			hasil = hasil * x
 		}
-		n = n >> 1
+		n = n / 2
 		x = x * x
 	}
 	return hasil
