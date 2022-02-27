@@ -29,6 +29,12 @@ pada task ini, buatlah program untuk menentukan bilangan tersebut termasuk bilan
 >input : 1000000007  
 Output: Bilangan Prima
 
+>fmt.Println(primeNumber(1000000007)) // true  
+fmt.Println(primeNumber(13))         // true  
+fmt.Println(primeNumber(17))         // true  
+fmt.Println(primeNumber(20))         // false  
+fmt.Println(primeNumber(35))         // false
+
 Berikut kode dari task ini :
 
 [prime.go](./praktikum/1_primeNumber/prime.go)
