@@ -5,13 +5,11 @@ import "fmt"
 func PairSum(arr []int, target int) []int {
 	var pair []int
 	mapping := make(map[int]int)
-	mapping2 := make(map[int]int)
 	for i := 0; i < len(arr); i++ {
-		mapping2[arr[i]] = i
-		if mapping[target-arr[i]] == 1 {
-			pair = append(pair, mapping2[target-arr[i]], i)
+		if _, ok := mapping[target-arr[i]]; ok {
+			pair = append(pair, mapping[target-arr[i]], i)
 		}
-		mapping[arr[i]] = 1
+		mapping[arr[i]] = i
 	}
 	return pair
 }
