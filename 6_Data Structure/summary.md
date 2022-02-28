@@ -6,6 +6,17 @@ Dalam materi ini, yang dipelajari adalah :
 2. Map
 3. Function
 
+### Array dan Slice
+Array adalah sebuah struktur data yang berisi group of element dengan tipe data yang sama dan ukuran alokasi nya fixed. Slice adalah sebuah struktur data yang berisi group of element dengan tipe data yang sama, slice hampir sama dengan array namun perbedaan nya adalah slice memiliki ukuran yang dynamic. slice juga tidak bisa dikatakan dynamic array karena merupakan reference type dimana memiliki pointer yang menunjuk referensi ke array pada saat membuat slice dari array. deklarasi slice sama dengan array namun kita tidak memberikan ukuran size di dalam bracket []
+
+### Map
+Map adalah sebuah struktur data yang menyimpan data dengan isi key dan value dimana setiap key nya bersifat unique. gambaran struktur map sebagai berikut
+
+<img src="./screenshots/map.jpg" width="500">
+
+### Function
+function adalah salah satu fundamental yang wajib kita mengerti, function adalah sekumpulan kode yang dikelompokkan atau dipanggil dengan nama tertentu. function sangat berguna untuk membagi kode menjadi beberapa bagian sehingga kode terlihat lebih bersih, rapi, dan kita bisa memanggil fungsi tersebut berulang-ulang. function biasanya ada yang menggunakan parameter dan ada yang tidak, dan jika function mengembalikan nilai maka didalam function harus kita beri return.
+
 ## Task
 ### 1. Array Merge
 pada task ini, Buatlah sebuah program menggabungkan 2 array yang diberikan, dan jangan sampai terdapat nama yang sama di data yang sudah tergabung tadi. (Structure Data , No BruteForce)
