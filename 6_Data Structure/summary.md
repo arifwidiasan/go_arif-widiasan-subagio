@@ -31,7 +31,7 @@ Berikut kode dari task ini :
 
 Hasil kode program :
 
-<img src="./screenshots/4_angka_muncul_sekali.jpg" width="900">
+<img src="./screenshots/2_angka_muncul_sekali.jpg" width="900">
 
 ### 3. Pair with Target Sum
 pada task ini, diberikan array bilangan berurut dan target sum, cari pasangan pada array dimana bila ditambahkan maka hasilnya sama dengan target sum. buat fungsi yang mengembalikan nilai index dari pasangan pada array yang berjumlah sama dengan target. tantangan pada task ini adalah mengerjakan dengan linear complexity O(n).
