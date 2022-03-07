@@ -68,7 +68,7 @@ Output: 10
 
 Berikut kode dari task ini :
 
-[dragon.go](./praktikum/3_dragon/dragon.go)
+[dragon.go](./praktikum/3_Dragon/dragon.go)
 
 Hasil kode program :
 
