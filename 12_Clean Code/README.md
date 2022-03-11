@@ -41,9 +41,9 @@ Jawab :
 
 [analyse.txt](./praktikum/analyse.txt)
 
-- Berapa banyak kekurangan dalam penulisan kode tersebut?
-
-**3**
+- Berapa banyak kekurangan dalam penulisan kode tersebut?  
+  
+  **3**
 
 - bagian mana saja terjadi kekurangan tersebut dan tuliskan alasannya!
 
@@ -64,4 +64,4 @@ Berikut kode dari task ini :
 
 Hasil kode program :
 
-<img src="./screenshots/jawab_2.jpg" width="700">
+<img src="./screenshots/jawab_2.jpg" width="500">
