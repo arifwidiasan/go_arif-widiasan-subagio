@@ -41,9 +41,7 @@ Jawab :
 
 [analyse.txt](./praktikum/analyse.txt)
 
-- Berapa banyak kekurangan dalam penulisan kode tersebut?  
-  
-  **3**
+- Berapa banyak kekurangan dalam penulisan kode tersebut? **3**
 
 - bagian mana saja terjadi kekurangan tersebut dan tuliskan alasannya!
 
