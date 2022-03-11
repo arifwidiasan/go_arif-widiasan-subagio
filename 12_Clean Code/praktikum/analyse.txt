@@ -1,0 +1,7 @@
+- Berapa banyak kekurangan dalam penulisan kode tersebut?
+3
+
+- bagian mana saja terjadi kekurangan tersebut dan tuliskan alasannya!
+  - Pada Nomer 1 variabel struct t tidak jelas penamaannya, jika itu merupakan array dari struct user maka nama variabel bisa diubah menjadi "list" atau yang lain.
+  - Pada nomer 2 tidak ada komentar kegunaan fungsi tersebut.
+  - Pada nomer 3 bisa diubah r menjadi v atau value karena for range tersebut untuk mengambil value array of struct.
