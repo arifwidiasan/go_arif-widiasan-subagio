@@ -47,3 +47,22 @@ pada task ini kita menerapkan SQL di command line :
 3. Create tabel kurir dengan field id, name, created_at, updated_at.
 
     <img src="./screenshots/2-3.jpg" width="700">
+4. Tambahkan ongkos_dasar column di tabel kurir.
+
+    <img src="./screenshots/2-4.jpg" width="700">
+5. Rename tabel kurir menjadi shipping.
+
+    <img src="./screenshots/2-5.jpg" width="700">
+6. Hapus / Drop tabel shipping karena ternyata tidak dibutuhkan.
+
+    <img src="./screenshots/2-6.jpg" width="700">
+7. Silahkan menambahkan entity baru dengan relation 1-to-1, 1-to-many, many-to-many. Seperti:
+   - 1-to-1: payment method description.
+   
+   <img src="./screenshots/2-7a.jpg" width="700">
+   - 1-to-many: user dengan alamat.
+   
+   <img src="./screenshots/2-7b.jpg" width="700">
+   - many-to-many: user dengan payment method menjadi user_payment_method_detail.
+   
+   <img src="./screenshots/2-7a.jpg" width="700">
