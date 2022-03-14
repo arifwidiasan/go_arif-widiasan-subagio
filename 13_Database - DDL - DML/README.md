@@ -32,12 +32,18 @@ pada task ini kita implementasi pembuatan schema :
 
 ### 2. Data Definition Language
 pada task ini kita menerapkan SQL di command line :
-1. Create database alta_online_shop.  
+
+[alta_online_shop.sql](./praktikum/alta_online_shop.sql)
+
+1. Create database alta_online_shop.
+
     <img src="./screenshots/2-1.jpg" width="700">
 2. Dari schema Olshop yang telah kamu kerjakan di, Implementasikanlah menjadi table pada MySQL.
    - Create table user
    - Create table product, product type, operators, product description, payment_method.
    - Create table transaction, transaction detail.
+
     <img src="./screenshots/2-2.jpg" width="700">
 3. Create tabel kurir dengan field id, name, created_at, updated_at.
+
     <img src="./screenshots/2-3.jpg" width="700">
