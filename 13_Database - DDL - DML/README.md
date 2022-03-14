@@ -59,10 +59,12 @@ pada task ini kita menerapkan SQL di command line :
 7. Silahkan menambahkan entity baru dengan relation 1-to-1, 1-to-many, many-to-many. Seperti:
    - 1-to-1: payment method description.
    
-   <img src="./screenshots/2-7a.jpg" width="700">
+    <img src="./screenshots/2-7a.jpg" width="700">
+
    - 1-to-many: user dengan alamat.
    
-   <img src="./screenshots/2-7b.jpg" width="700">
+    <img src="./screenshots/2-7b.jpg" width="700">
+    
    - many-to-many: user dengan payment method menjadi user_payment_method_detail.
    
-   <img src="./screenshots/2-7a.jpg" width="700">
+    <img src="./screenshots/2-7a.jpg" width="700">
