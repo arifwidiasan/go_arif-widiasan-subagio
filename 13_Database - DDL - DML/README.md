@@ -67,4 +67,4 @@ pada task ini kita menerapkan SQL di command line :
     
    - many-to-many: user dengan payment method menjadi user_payment_method_detail.
    
-    <img src="./screenshots/2-7a.jpg" width="700">
+    <img src="./screenshots/2-7c.jpg" width="700">
