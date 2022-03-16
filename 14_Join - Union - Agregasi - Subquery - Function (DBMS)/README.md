@@ -39,82 +39,64 @@ pada task ini kita membuat query data manipulation language dengan perintah sepe
    <br><br><img src="./screenshots/1a.jpg" width="700">
 
    - Insert 3 product type.
-   <br><img src="./screenshots/1b.jpg" width="700">
+   <br><br><img src="./screenshots/1b.jpg" width="700">
 
    - Insert 2 product dengan product type id = 1, dan operators id = 3.
-
-   <img src="./screenshots/1c.jpg" width="700">
+   <br><br><img src="./screenshots/1c.jpg" width="700">
 
    - Insert 3 product dengan product type id = 2, dan operators id = 1.
-
-   <img src="./screenshots/1d.jpg" width="700">
+   <br><br><img src="./screenshots/1d.jpg" width="700">
 
    - Insert 3 product dengan product type id = 3, dan operators id = 4.
-
-   <img src="./screenshots/1e.jpg" width="700">
+   <br><br><img src="./screenshots/1e.jpg" width="700">
 
    - Insert product description pada setiap product.
-
-   <img src="./screenshots/1f.jpg" width="700">
+   <br><br><img src="./screenshots/1f.jpg" width="700">
 
    - Insert 3 payment methods.
-
-   <img src="./screenshots/1g.jpg" width="700">
+   <br><br><img src="./screenshots/1g.jpg" width="700">
 
    - Insert 5 user pada tabel user.
-
-   <img src="./screenshots/1h.jpg" width="700">
+   <br><br><img src="./screenshots/1h.jpg" width="700">
 
    - Insert 3 transaksi di masing-masing user.
-
-   <img src="./screenshots/1i.jpg" width="700">
+   <br><br><img src="./screenshots/1i.jpg" width="700">
 
    - Insert 3 product di masing-masing transaksi.
-
-   <img src="./screenshots/1j.jpg" width="700">
+   <br><br><img src="./screenshots/1j.jpg" width="700">
 
 2. Select
    - Tampilkan nama user / pelanggan dengan gender Laki-laki / M.
-
-   <img src="./screenshots/2a.jpg" width="700">
+   <br><br><img src="./screenshots/2a.jpg" width="700">
 
    - Tampilkan product dengan id = 3.
-
-   <img src="./screenshots/2b.jpg" width="700">
+   <br><br><img src="./screenshots/2b.jpg" width="700">
 
    - Tampilkan data pelanggan yang created_at dalam range 7 hari kebelakang dan mempunyai nama mengandung kata ‘a’.
-
-   <img src="./screenshots/2c.jpg" width="700">
+   <br><br><img src="./screenshots/2c.jpg" width="700">
 
    - Hitung jumlah user / pelanggan dengan status gender Perempuan.
-
-   <img src="./screenshots/2d.jpg" width="700">
+   <br><br><img src="./screenshots/2d.jpg" width="700">
 
    - Tampilkan data pelanggan dengan urutan sesuai nama abjad
-
-   <img src="./screenshots/2e.jpg" width="700">
+   <br><br><img src="./screenshots/2e.jpg" width="700">
 
    - Tampilkan 5 data pada data product
-
-   <img src="./screenshots/2f.jpg" width="700">
+   <br><br><img src="./screenshots/2f.jpg" width="700">
 
 3. Update
    - Ubah data product id 1 dengan nama ‘product dummy’.
-
-   <img src="./screenshots/3a.jpg" width="700">
+   <br><br><img src="./screenshots/3a.jpg" width="700">
 
    - Update qty = 3 pada transaction detail dengan product id 1.
-
-   <img src="./screenshots/3b.jpg" width="700">
+   <br><br><img src="./screenshots/3b.jpg" width="700">
 
 4. Delete
    - Delete data pada tabel product dengan id 1.
-
-   <img src="./screenshots/4a.jpg" width="700">
+   <br><br><img src="./screenshots/4a.jpg" width="700">
 
    - Delete pada pada tabel product dengan product type id 1.
-
-   <img src="./screenshots/4b.jpg" width="700">
+   <br><br><img src="./screenshots/4b.jpg" width="700">
 
 ### 2. Join, Union, Sub-query, Function
 pada task ini kita membuat query untuk Join, Union, Sub-query, Function dengan perintah seperti berikut :
@@ -122,8 +104,7 @@ pada task ini kita membuat query untuk Join, Union, Sub-query, Function dengan p
 [File Query SQL Join, Union, Sub-query, Function](./praktikum/2.sql)
 
 1. Gabungkan data transaksi dari user id 1 dan user id 2.
-
-<img src="./screenshots/2-1.jpg" width="700">
+<br><br><img src="./screenshots/2-1.jpg" width="700">
 
 2. Tampilkan jumlah harga transaksi user id 1.
 
