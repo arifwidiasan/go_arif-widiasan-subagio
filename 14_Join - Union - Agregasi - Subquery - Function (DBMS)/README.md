@@ -36,7 +36,7 @@ pada task ini kita membuat query data manipulation language dengan perintah sepe
 
 1. Insert
    - Insert 5 operators pada table operators.
-   <br><img src="./screenshots/1a.jpg" width="700">
+   <br><br><img src="./screenshots/1a.jpg" width="700">
 
    - Insert 3 product type.
    <br><img src="./screenshots/1b.jpg" width="700">
