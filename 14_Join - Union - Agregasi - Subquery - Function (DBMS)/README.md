@@ -107,29 +107,22 @@ pada task ini kita membuat query untuk Join, Union, Sub-query, Function dengan p
 <br><br><img src="./screenshots/2-1.jpg" width="700">
 
 2. Tampilkan jumlah harga transaksi user id 1.
-
-<img src="./screenshots/2-2.jpg" width="700">
+<br><br><img src="./screenshots/2-2.jpg" width="700">
 
 3. Tampilkan total transaksi dengan product type 2.
-
-<img src="./screenshots/2-3.jpg" width="700">
+<br><br><img src="./screenshots/2-3.jpg" width="700">
 
 4. Tampilkan semua field table product dan field name table product type yang saling berhubungan.
-
-<img src="./screenshots/2-4.jpg" width="700">
+<br><br><img src="./screenshots/2-4.jpg" width="700">
 
 5. Tampilkan semua field table transaction, field name table product dan field name table user.
-
-<img src="./screenshots/2-5.jpg" width="700">
+<br><br><img src="./screenshots/2-5.jpg" width="700">
 
 6. Buat function setelah data transaksi dihapus maka transaction detail terhapus juga dengan transaction id yang dimaksud.
-
-<img src="./screenshots/2-6.jpg" width="700">
+<br><br><img src="./screenshots/2-6.jpg" width="700">
 
 7. Buat function setelah data transaksi detail dihapus maka data total_qty terupdate berdasarkan qty data transaction id yang dihapus.
-
-<img src="./screenshots/2-7.jpg" width="700">
+<br><br><img src="./screenshots/2-7.jpg" width="700">
 
 8. Tampilkan data products yang tidak pernah ada di tabel transaction_details dengan sub-query.
-
-<img src="./screenshots/2-8.jpg" width="700">
+<br><br><img src="./screenshots/2-8.jpg" width="700">
