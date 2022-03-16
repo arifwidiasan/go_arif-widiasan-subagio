@@ -35,7 +35,7 @@ pada task ini kita membuat query data manipulation language dengan perintah sepe
 [File Query SQL Data Manipulation Language](./praktikum/1.sql)
 
 1. Insert
-   - Insert 5 operators pada table operators.
+   - Insert 5 operators pada table operators.  
 
    <img src="./screenshots/1a.jpg" width="700">
 
