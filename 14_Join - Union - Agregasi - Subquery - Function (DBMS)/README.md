@@ -36,12 +36,10 @@ pada task ini kita membuat query data manipulation language dengan perintah sepe
 
 1. Insert
    - Insert 5 operators pada table operators.
-
    <br><img src="./screenshots/1a.jpg" width="700">
 
    - Insert 3 product type.
-
-   <img src="./screenshots/1b.jpg" width="700">
+   <br><img src="./screenshots/1b.jpg" width="700">
 
    - Insert 2 product dengan product type id = 1, dan operators id = 3.
 
