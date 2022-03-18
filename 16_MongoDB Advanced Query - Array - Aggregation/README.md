@@ -47,32 +47,232 @@ db.books.aggregate([
 <img src="./screenshots/2.jpg" width="600">
 
 3. Tampilan total jumlah halaman buku author id 2.
-<br><br><img src="./screenshots/s3.jpg" width="600">
-<br><br><img src="./screenshots/3.jpg" width="600">
+```javascript
+db.books.aggregate([
+    {
+        $match: {
+            authorID: 2
+        }
+    },
+    {
+        $group: {
+            totalPages: { $sum : "$stats.page"},
+            _id: 2
+        }
+    }
+])
+```
+<img src="./screenshots/3.jpg" width="600">
 
 4. Tampilkan semua field books and authors terkait.
-<br><br><img src="./screenshots/s4.jpg" width="600">
-<br><br><img src="./screenshots/4a.jpg" width="600">
-<br><br><img src="./screenshots/4b.jpg" width="600">
+```javascript
+db.authors.aggregate([
+    {
+        $lookup : {
+            from: "books",
+            localField: "_id",
+            foreignField : "authorID",
+            as : "books"
+        }
+    }
+])
+```
+<img src="./screenshots/4a.jpg" width="600">
+
+```javascript
+db.books.aggregate([
+    {
+        $lookup : {
+            from: "authors",
+            localField: "authorID",
+            foreignField : "_id",
+            as : "authors"
+        }
+    }
+])
+```
+<img src="./screenshots/4b.jpg" width="600">
 
 5. Tampilkan semua field books, authors, dan publishers terkait.
-<br><br><img src="./screenshots/s5.jpg" width="600">
-<br><br><img src="./screenshots/5.jpg" width="600">
+```javascript
+db.books.aggregate([
+    {
+        $lookup : {
+            from: "authors",
+            localField: "authorID",
+            foreignField : "_id",
+            as : "authors"
+        }
+    },
+    {
+        $lookup : {
+            from: "publishers",
+            localField: "publisherID",
+            foreignField : "_id",
+            as : "publisher"
+        }
+    }
+])
+```
+<img src="./screenshots/5.jpg" width="600">
 
 6. Tampilkan summary data authors, books, dan publishers sesuai dengan Output.
-<br><br><img src="./screenshots/s6.jpg" width="600">
-<br><br><img src="./screenshots/6.jpg" width="600">
+```javascript
+db.authors.aggregate([
+    {
+        $lookup : {
+            from: "books",
+            localField: "_id",
+            foreignField : "authorID",
+            as : "books"
+        }
+    },
+    /* {
+        $unwind: "$books"
+    }, */
+    {
+        $lookup : {
+            from: "publishers",
+            localField: "books.publisherID",
+            foreignField : "_id",
+            as : "publishers"
+        }
+    },
+    /* {
+        $unwind: "$publishers"
+    }, */
+    {
+        $project: {
+            _id : { $concat: ["$firstName"," ","$lastName"]},
+            number_of_books : {$size: "$books.authorID"},
+            list_of_book : "$books.title",
+        }
+    }
+])
+```
+<img src="./screenshots/6.jpg" width="600">
 
 7. Digital_outlet ingin memberikan diskon untuk setiap buku, diskon di tentukan melihat harga buku tersebut dengan pembagian seperti ini.
-<br><br><img src="./screenshots/no7.jpg">
-<br><br><img src="./screenshots/s7.jpg" width="600">
-<br><br><img src="./screenshots/7.jpg" width="600">
+```javascript
+db.books.aggregate(
+    [
+       {
+          $project:
+            {
+                _id : 1,
+                title: 1,
+                price: 1,
+                discount:
+                {
+                    $cond: { if: { $lte: [ "$price", 60000] }, then: "1%", else: 
+                    {
+                        $cond: { if: { $lte : [ "$price", 90000] }, then: "2%", else: "3%" }
+                    } }
+                }
+            }
+       }
+    ]
+ )
+```
+<img src="./screenshots/7.jpg" width="600">
 
 8. Tampilkan semua nama buku, harga, nama author dan nama publisher, urutkan dari harga termahal ke termurah.
-<br><br><img src="./screenshots/s8.jpg" width="600">
-<br><br><img src="./screenshots/8.jpg" width="600">
+```javascript
+db.books.aggregate([
+    {
+        $sort: {price:-1}
+    },
+    {
+        $lookup : {
+            from: "authors",
+            localField: "authorID",
+            foreignField : "_id",
+            as : "authors"
+        }
+    },
+    {
+        $unwind: "$authors"
+    },
+    {
+        $lookup : {
+            from: "publishers",
+            localField: "publisherID",
+            foreignField : "_id",
+            as : "publishers"
+        }
+    },
+    {
+        $unwind: "$publishers"
+    },
+    {
+        $project:
+          {
+              _id: 0,
+              title: 1,
+              price: 1,
+              author : { $concat: ["$authors.firstName"," ", "$authors.lastName"]},
+              publisher : "$publishers.publisherName"
+          }
+     }
+])
+```
+<img src="./screenshots/8.jpg" width="600">
 
 9. Tampilkan data nama buku harga dan publisher, kemudian tampilkan hanya data ke 3 dan ke 4.
-<br><br><img src="./screenshots/s9.jpg" width="600">
-<br><br><img src="./screenshots/9a.jpg" width="600">
-<br><br><img src="./screenshots/9b.jpg" width="600">
+```javascript
+db.books.aggregate([
+    {
+        $lookup : {
+            from: "publishers",
+            localField: "publisherID",
+            foreignField : "_id",
+            as : "publishers"
+        }
+    },
+    {
+        $unwind: "$publishers"
+    },
+    {
+        $project:
+          {
+              _id: 1,
+              title: 1,
+              price: 1,
+              publisher : "$publishers.publisherName"
+          }
+     }
+])
+```
+<img src="./screenshots/9a.jpg" width="600">
+
+```javascript
+db.books.aggregate([
+    {
+        $skip:2
+    },
+    {
+        $limit:2
+    },
+    {
+        $lookup : {
+            from: "publishers",
+            localField: "publisherID",
+            foreignField : "_id",
+            as : "publishers"
+        }
+    },
+    {
+        $unwind: "$publishers"
+    },
+    {
+        $project:
+          {
+              _id: 1,
+              title: 1,
+              price: 1,
+              publisher : "$publishers.publisherName"
+          }
+     }
+])
+```
+<img src="./screenshots/9b.jpg" width="600">
