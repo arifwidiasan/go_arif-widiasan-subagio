@@ -22,7 +22,7 @@ pada task ini kita membuat query aggregation pada MongoDB dengan perintah sepert
 [File Daftar Query MongoDB](./praktikum/query.js)
 
 1. Gabungkan (menampilkan) data buku dari author id 1 dan author id 2.
-```
+```javascript
 db.books.find({ $or: [{authorID:1},{authorID:2}]})
 ```
 <br><img src="./screenshots/1.jpg" width="600">
@@ -44,7 +44,7 @@ db.books.aggregate([
     }
 ])
 ```
-<br><br><img src="./screenshots/2.jpg" width="600">
+   <br><img src="./screenshots/2.jpg" width="600">
 
 3. Tampilan total jumlah halaman buku author id 2.
 <br><br><img src="./screenshots/s3.jpg" width="600">
