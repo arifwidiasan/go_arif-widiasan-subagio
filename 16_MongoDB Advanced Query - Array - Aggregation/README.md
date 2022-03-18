@@ -28,7 +28,7 @@ db.books.find({ $or: [{authorID:1},{authorID:2}]})
 <br><img src="./screenshots/1.jpg" width="600">
 
 2. Tampilkan daftar buku dan harga author id 1.
-```
+```javascript
 db.books.aggregate([
     {
         $match: {
