@@ -28,7 +28,22 @@ db.books.find({ $or: [{authorID:1},{authorID:2}]})
 <br><img src="./screenshots/1.jpg" width="600">
 
 2. Tampilkan daftar buku dan harga author id 1.
-<br><br><img src="./screenshots/s2.jpg" width="600">
+```
+db.books.aggregate([
+    {
+        $match: {
+            authorID: 1
+        }
+    },
+    {
+        $project: {
+            _id: 1,
+            title: 1,
+            price: 1
+        }
+    }
+])
+```
 <br><br><img src="./screenshots/2.jpg" width="600">
 
 3. Tampilan total jumlah halaman buku author id 2.
