@@ -40,8 +40,8 @@ pada task ini kita membuat query aggregation pada MongoDB dengan perintah sepert
 6. Tampilkan summary data authors, books, dan publishers sesuai dengan Output.
 <br><br><img src="./screenshots/6.jpg" width="700">
 
-7. Digital_outlet ingin memberikan diskon untuk setiap buku, diskon di tentukan melihat harga buku tersebut dengan pembagian seperti ini.  
-<img src="./screenshots/no7.jpg" width="700">
+7. Digital_outlet ingin memberikan diskon untuk setiap buku, diskon di tentukan melihat harga buku tersebut dengan pembagian seperti ini.
+<br><br><img src="./screenshots/no7.jpg">
 <br><br><img src="./screenshots/7.jpg" width="700">
 
 8. Tampilkan semua nama buku, harga, nama author dan nama publisher, urutkan dari harga termahal ke termurah.
