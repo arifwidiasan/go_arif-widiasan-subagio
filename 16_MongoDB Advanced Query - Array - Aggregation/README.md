@@ -22,7 +22,9 @@ pada task ini kita membuat query aggregation pada MongoDB dengan perintah sepert
 [File Daftar Query MongoDB](./praktikum/query.js)
 
 1. Gabungkan (menampilkan) data buku dari author id 1 dan author id 2.
-<br><br><img src="./screenshots/s1.jpg" width="600">
+```
+db.books.find({ $or: [{authorID:1},{authorID:2}]})
+```
 <br><br><img src="./screenshots/1.jpg" width="600">
 
 2. Tampilkan daftar buku dan harga author id 1.
@@ -47,8 +49,8 @@ pada task ini kita membuat query aggregation pada MongoDB dengan perintah sepert
 <br><br><img src="./screenshots/6.jpg" width="600">
 
 7. Digital_outlet ingin memberikan diskon untuk setiap buku, diskon di tentukan melihat harga buku tersebut dengan pembagian seperti ini.
-<br><br><img src="./screenshots/s7.jpg" width="600">
 <br><br><img src="./screenshots/no7.jpg">
+<br><br><img src="./screenshots/s7.jpg" width="600">
 <br><br><img src="./screenshots/7.jpg" width="600">
 
 8. Tampilkan semua nama buku, harga, nama author dan nama publisher, urutkan dari harga termahal ke termurah.
