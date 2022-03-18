@@ -22,6 +22,7 @@ pada task ini kita membuat query aggregation pada MongoDB dengan perintah sepert
 [File Daftar Query MongoDB](./praktikum/query.js)
 
 1. Gabungkan (menampilkan) data buku dari author id 1 dan author id 2.
+
 ```
 db.books.find({ $or: [{authorID:1},{authorID:2}]})
 ```
