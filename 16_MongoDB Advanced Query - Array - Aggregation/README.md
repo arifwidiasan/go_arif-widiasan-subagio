@@ -7,13 +7,28 @@ Dalam materi ini, yang dipelajari adalah :
 3. Aggregation
 
 ### Advanced Query
-Pada mongoDB terdapat advanced query
+Pada mongoDB terdapat advanced query seperti comparasion dan logical seperti 
+- $eq : equal atau sama
+- $ne : not equal atau tidak sama
+- $ge-$lt : greater equal lower than
+- $gte-lte : greater than equal lower than equal
+- $or & $and : logic or dan and
+- $in & $nin : in dan not in
+- $not : bukan
+- $regex : evaluator
 
 ### Array
-yeet
+MongoDB juga bisa menyimpan array dalam objek dan terdapat query untuk array tersebut seperti find $all untuk mencari semua yang ada dalam array, find $size untuk menampilkan banyak array yang spesifik, find $slice untuk mengambil nilai array berdasarkan slice yang diberikan. selain itu kita juga bisa update menambah nilai ke array dengan $push dan membuang nilai awal atau akhir array dengan $pop.
 
 ### Aggregation
-teey
+Aggregation merupakan kumpulan rangkaian dari transformasi dokumen (pipeline), antara lain
+- $lookup : join collection (left outer join)
+- $match : filter document
+- $project : reshape document
+- $cond : condition document
+- group : summarize document
+- $unwind : expand document
+- $sort, $limit, $skip : display document
 
 ## Task
 ### 1. Aggregation MongoDB
