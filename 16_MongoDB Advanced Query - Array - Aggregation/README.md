@@ -25,7 +25,7 @@ pada task ini kita membuat query aggregation pada MongoDB dengan perintah sepert
 ```javascript
 db.books.find({ $or: [{authorID:1},{authorID:2}]})
 ```
-<br><img src="./screenshots/1.jpg" width="600">
+<img src="./screenshots/1.jpg" width="600">
 
 2. Tampilkan daftar buku dan harga author id 1.
 ```javascript
@@ -44,7 +44,7 @@ db.books.aggregate([
     }
 ])
 ```
-   <br><img src="./screenshots/2.jpg" width="600">
+<img src="./screenshots/2.jpg" width="600">
 
 3. Tampilan total jumlah halaman buku author id 2.
 <br><br><img src="./screenshots/s3.jpg" width="600">
