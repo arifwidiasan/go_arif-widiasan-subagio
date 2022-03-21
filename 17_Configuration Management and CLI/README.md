@@ -65,19 +65,19 @@ Berikut adalah pengerjaan dan hasil output dari task tersebut.
 [automate.sh](./praktikum/automate.sh)
 
 - Run Script dan Tree directory
-<br><br><img src="./screenshots/2tree.jpg" width="500">
+<br><br><img src="./screenshots/2tree.jpg" width="700">
 
 - facebook.txt
-<br><br><img src="./screenshots/2fb.jpg" width="500">
+<br><br><img src="./screenshots/2fb.jpg" width="700">
 
 - linkedin.txt
-<br><br><img src="./screenshots/2linkedin.jpg" width="500">
+<br><br><img src="./screenshots/2linkedin.jpg" width="700">
 
 - list_of_my_friend.txt
-<br><br><img src="./screenshots/2teman.jpg" width="500">
+<br><br><img src="./screenshots/2teman.jpg" width="700">
 
 - about_this_laptop.txt
-<br><br><img src="./screenshots/2laptop.jpg" width="500">
+<br><br><img src="./screenshots/2laptop.jpg" width="700">
 
 - internet_connection.txt
-<br><br><img src="./screenshots/2ping.jpg" width="500">
+<br><br><img src="./screenshots/2ping.jpg" width="700">
