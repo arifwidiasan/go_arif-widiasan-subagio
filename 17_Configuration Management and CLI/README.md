@@ -64,7 +64,7 @@ Berikut adalah pengerjaan dan hasil output dari task tersebut.
 
 [automate.sh](./praktikum/automate.sh)
 
-- Tree directory
+- Run Script dan Tree directory
 <br><br><img src="./screenshots/2tree.jpg" width="500">
 
 - facebook.txt
