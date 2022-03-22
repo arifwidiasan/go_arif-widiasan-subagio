@@ -29,10 +29,10 @@ pada task ini, ada kasus dimana akan dikembangkan sistem yang dapat digunakan un
 [File Use Case](./praktikum/usecase.drawio)
 
 - Buat desain ERD
-<br><br><img src="./screenshots/1a.jpg" width="700">
+<br><br><img src="./screenshots/1a.png" width="700">
 
 - Buat Use Case
-<br><br><img src="./screenshots/1b.jpg" width="700">
+<br><br><img src="./screenshots/1b.png" width="700">
 
 ### 2. Query
 Terdapat sebuah Query dalam format SQL
