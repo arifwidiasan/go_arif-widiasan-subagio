@@ -16,7 +16,7 @@ go mod init <direktori>
 go get github.com/labstack/echo/v4
 ```
 Kemudian contoh kode program merupakan basic routing dan controller untuk mencetak **"hello world"**
-```
+```go
 package main
 
 import (
