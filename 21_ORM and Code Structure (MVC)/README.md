@@ -61,10 +61,10 @@ pada task ini, Buat API CRUD User menggunakan database dan terapkan code structu
 
 Kode Program dan hasil output nya adalah :
 
-[main.go](./praktikum/problem_2/project/main.go)
-[config.go](./praktikum/problem_2/project/config/config.go)
-[user_controller.go](./praktikum/problem_2/project/controller/user_controller.go)
-[user.go](./praktikum/problem_2/project/model/user.go)
+[main.go](./praktikum/problem_2/project/main.go)  
+[config.go](./praktikum/problem_2/project/config/config.go)  
+[user_controller.go](./praktikum/problem_2/project/controller/user_controller.go)  
+[user.go](./praktikum/problem_2/project/model/user.go)  
 [route.go](./praktikum/problem_2/project/route/route.go)
 
 1. Get all users data
@@ -94,10 +94,10 @@ Kode Program dan hasil output nya adalah :
 
 Kode Program dan hasil output nya adalah :
 
-[main.go](./praktikum/problem_2/project/main.go)
-[config.go](./praktikum/problem_2/project/config/config.go)
-[book_controller.go](./praktikum/problem_2/project/controller/book_controller.go)
-[book.go](./praktikum/problem_2/project/model/book.go)
+[main.go](./praktikum/problem_2/project/main.go)  
+[config.go](./praktikum/problem_2/project/config/config.go)  
+[book_controller.go](./praktikum/problem_2/project/controller/book_controller.go)  
+[book.go](./praktikum/problem_2/project/model/book.go)  
 [route.go](./praktikum/problem_2/project/route/route.go)
 
 1. Get all books data
