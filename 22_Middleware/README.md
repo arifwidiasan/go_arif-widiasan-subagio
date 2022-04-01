@@ -3,17 +3,17 @@
 ## Resume
 Dalam materi ini, yang dipelajari adalah :
 1. Middleware
-2. Log and Basic Auth Middleware
+2. Log and Auth Middleware
 3. JWT Middleware
 
 ### Middleware
+Middlware adalah entitas yang terpasang pada proses server request/response, middleware memperbolehkan kita untuk implementasi berbagai fungsionalitas diantara http request yang datang ke server dan response keluar. Ada banyak third party middleware yang ada seperti negroni, echo, interpose, Alice, atau bisa juga membuat sendiri.
 
-
-### Log and Basic Auth Middleware
-
+### Log and Auth Middleware
+Log middleware berfungsi untuk mencatat apa saja http request yang dilakukan dan apa respon nya, biasanya digunakan untuk logging, footprint, dan analisa data. Auth Middleware berfungsi untuk memberikan user identification yaitu siapa saja yang bisa meminta request ke server dengan tujuan untuk menjaga data dan informasi sehingga tidak sembarang orang yang bisa melakukan request ke server.
 
 ### JWT Middleware
-
+JSON Web Token (JWT) merupakan bagian dari auth middleware dimana JWT merupakan teknik untuk autentifikasi request dengan memberikan informasi berupa token pada request header. JWT Memiliki 3 bagian yaitu header, payload, dan verify signature.
 
 ## Task
 ### 1. Logging & JWT Authentication
