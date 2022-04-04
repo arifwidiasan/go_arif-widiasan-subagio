@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>controller: Go Coverage Report</title>
+		<style>
+			body {
+				background: black;
+				color: rgb(80, 80, 80);
+			}
+			body, pre, #legend span {
+				font-family: Menlo, monospace;
+				font-weight: bold;
+			}
+			#topbar {
+				background: black;
+				position: fixed;
+				top: 0; left: 0; right: 0;
+				height: 42px;
+				border-bottom: 1px solid rgb(80, 80, 80);
+			}
+			#content {
+				margin-top: 50px;
+			}
+			#nav, #legend {
+				float: left;
+				margin-left: 10px;
+			}
+			#legend {
+				margin-top: 12px;
+			}
+			#nav {
+				margin-top: 10px;
+			}
+			#legend span {
+				margin: 0 5px;
+			}
+			.cov0 { color: rgb(192, 0, 0) }
+.cov1 { color: rgb(128, 128, 128) }
+.cov2 { color: rgb(116, 140, 131) }
+.cov3 { color: rgb(104, 152, 134) }
+.cov4 { color: rgb(92, 164, 137) }
+.cov5 { color: rgb(80, 176, 140) }
+.cov6 { color: rgb(68, 188, 143) }
+.cov7 { color: rgb(56, 200, 146) }
+.cov8 { color: rgb(44, 212, 149) }
+.cov9 { color: rgb(32, 224, 152) }
+.cov10 { color: rgb(20, 236, 155) }
+
+		</style>
+	</head>
+	<body>
+		<div id="topbar">
+			<div id="nav">
+				<select id="files">
+				
+				<option value="file0">project/controller/book_controller.go (85.2%)</option>
+				
+				<option value="file1">project/controller/handler.go (0.0%)</option>
+				
+				<option value="file2">project/controller/user_controller.go (60.5%)</option>
+				
+				</select>
+			</div>
+			<div id="legend">
+				<span>not tracked</span>
+			
+				<span class="cov0">not covered</span>
+				<span class="cov8">covered</span>
+			
+			</div>
+		</div>
+		<div id="content">
+		
+		<pre class="file" id="file0" style="display: none">package controller
+
+import (
+        "net/http"
+        "project/model"
+        "project/repository"
+        "strconv"
+
+        "github.com/labstack/echo/v4"
+)
+
+func createBookController(c echo.Context) error <span class="cov8" title="1">{
+        books := model.Book{}
+        if err := c.Bind(&amp;books); err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+
+        <span class="cov8" title="1">err := repository.CreateBooks(books)
+        if err != nil </span><span class="cov0" title="0">{
+                return c.JSON(http.StatusBadRequest, map[string]interface{}{
+                        "messages": err.Error(),
+                })
+        }</span>
+        <span class="cov8" title="1">return c.JSON(http.StatusCreated, map[string]interface{}{
+                "messages": "Success create new book",
+                "user":     books,
+        })</span>
+}
+
+func getBooksController(c echo.Context) error <span class="cov8" title="1">{
+        books := repository.GetAllBooks()
+
+        return c.JSON(http.StatusOK, map[string]interface{}{
+                "messages": "Success",
+                "data":     books,
+        })
+}</span>
+
+func getBookController(c echo.Context) error <span class="cov8" title="1">{
+        id, _ := strconv.Atoi(c.Param("id"))
+
+        res, err := repository.GetOneByIdBook(id)
+        if err != nil </span><span class="cov8" title="1">{
+                return c.JSON(http.StatusNotFound, map[string]interface{}{
+                        "messages": "id not found",
+                })
+        }</span>
+        <span class="cov8" title="1">return c.JSON(http.StatusOK, map[string]interface{}{
+                "messages": "Success",
+                "data":     res,
+        })</span>
+}
+
+func deleteBookController(c echo.Context) error <span class="cov8" title="1">{
+        id, _ := strconv.Atoi(c.Param("id"))
+
+        err := repository.DeleteByIdBook(id)
+        //err := config.DB.Delete(&amp;users, c.Param("id")).Error
+        if err != nil </span><span class="cov8" title="1">{
+                return c.JSON(http.StatusBadRequest, map[string]interface{}{
+                        "messages": "id not found",
+                })
+        }</span>
+        <span class="cov8" title="1">return c.JSON(http.StatusOK, map[string]interface{}{
+                "messages": "Data is deleted",
+        })</span>
+}
+
+func updateBookController(c echo.Context) error <span class="cov8" title="1">{
+        var books model.Book
+        id, _ := strconv.Atoi(c.Param("id"))
+        if err := c.Bind(&amp;books); err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+
+        //DB.Model(&amp;users).Where("id = ?", c.Param("id")).Update("name", "hello")
+        <span class="cov8" title="1">err := repository.UpdateOneByIdBook(id, books)
+
+        if err != nil </span><span class="cov0" title="0">{
+                return c.JSON(http.StatusBadRequest, map[string]interface{}{
+                        "messages": "update error",
+                })
+        }</span>
+        <span class="cov8" title="1">return c.JSON(http.StatusOK, map[string]interface{}{
+                "messages": "Data is updated",
+                "id user":  c.Param("id"),
+        })</span>
+}
+</pre>
+		
+		<pre class="file" id="file1" style="display: none">package controller
+
+import (
+        "project/constants"
+
+        "github.com/labstack/echo/v4"
+        mid "github.com/labstack/echo/v4/middleware"
+)
+
+func RegisterUserGroupAPI(e *echo.Group) <span class="cov0" title="0">{
+        e.GET("", getUsersController, mid.JWT([]byte(constants.SECRET_JWT)))
+        e.GET("/:id", getUserController, mid.JWT([]byte(constants.SECRET_JWT)))
+        e.PUT("/:id", updateUserController, mid.JWT([]byte(constants.SECRET_JWT)))
+        e.DELETE("/:id", deleteUserController, mid.JWT([]byte(constants.SECRET_JWT)))
+        e.POST("", createUserController)
+}</span>
+
+func RegisterBookGroupAPI(e *echo.Group) <span class="cov0" title="0">{
+        e.GET("", getBooksController)
+        e.GET("/:id", getBookController)
+        e.PUT("/:id", updateBookController, mid.JWT([]byte(constants.SECRET_JWT)))
+        e.DELETE("/:id", deleteBookController, mid.JWT([]byte(constants.SECRET_JWT)))
+        e.POST("", createBookController, mid.JWT([]byte(constants.SECRET_JWT)))
+}</span>
+</pre>
+		
+		<pre class="file" id="file2" style="display: none">package controller
+
+import (
+        "net/http"
+        "strconv"
+
+        "project/config"
+        "project/middleware"
+        "project/model"
+        "project/repository"
+
+        "github.com/labstack/echo/v4"
+)
+
+func createUserController(c echo.Context) error <span class="cov8" title="1">{
+        users := model.User{}
+        if err := c.Bind(&amp;users); err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+
+        <span class="cov8" title="1">err := repository.CreateUsers(users)
+        if err != nil </span><span class="cov0" title="0">{
+                return c.JSON(http.StatusBadRequest, map[string]interface{}{
+                        "messages": err.Error(),
+                })
+        }</span>
+
+        <span class="cov8" title="1">return c.JSON(http.StatusCreated, map[string]interface{}{
+                "messages": "Success create new user",
+                "user":     users,
+        })</span>
+}
+
+func getUsersController(c echo.Context) error <span class="cov8" title="1">{
+        users := repository.GetAllUsers()
+
+        return c.JSON(http.StatusOK, map[string]interface{}{
+                "messages": "Success",
+                "data":     users,
+        })
+}</span>
+
+func getUserController(c echo.Context) error <span class="cov8" title="1">{
+        id, _ := strconv.Atoi(c.Param("id"))
+
+        res, err := repository.GetOneByIdUser(id)
+        if err != nil </span><span class="cov8" title="1">{
+                return c.JSON(http.StatusNotFound, map[string]interface{}{
+                        "messages": "id not found",
+                })
+        }</span>
+        <span class="cov8" title="1">return c.JSON(http.StatusOK, map[string]interface{}{
+                "messages": "Success",
+                "data":     res,
+        })</span>
+}
+
+func deleteUserController(c echo.Context) error <span class="cov8" title="1">{
+        id, _ := strconv.Atoi(c.Param("id"))
+
+        err := repository.DeleteByIdUser(id)
+        //err := config.DB.Delete(&amp;users, c.Param("id")).Error
+        if err != nil </span><span class="cov8" title="1">{
+                return c.JSON(http.StatusBadRequest, map[string]interface{}{
+                        "messages": "id not found",
+                })
+        }</span>
+        <span class="cov8" title="1">return c.JSON(http.StatusOK, map[string]interface{}{
+                "messages": "Data is deleted",
+        })</span>
+}
+
+func updateUserController(c echo.Context) error <span class="cov8" title="1">{
+        var users model.User
+        id, _ := strconv.Atoi(c.Param("id"))
+        if err := c.Bind(&amp;users); err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+
+        //DB.Model(&amp;users).Where("id = ?", c.Param("id")).Update("name", "hello")
+        <span class="cov8" title="1">err := repository.UpdateOneByIdUser(id, users)
+
+        if err != nil </span><span class="cov0" title="0">{
+                return c.JSON(http.StatusBadRequest, map[string]interface{}{
+                        "messages": "update error",
+                })
+        }</span>
+        <span class="cov8" title="1">return c.JSON(http.StatusOK, map[string]interface{}{
+                "messages": "Data is updated",
+                "id user":  c.Param("id"),
+        })</span>
+}
+
+func LoginUserController(c echo.Context) error <span class="cov0" title="0">{
+        users := model.User{}
+        if err := c.Bind(&amp;users); err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+
+        <span class="cov0" title="0">err := config.DB.Where("email = ? AND password = ?", users.Email, users.Password).First(&amp;users).Error
+        if err != nil </span><span class="cov0" title="0">{
+                return c.JSON(http.StatusBadRequest, map[string]interface{}{
+                        "messages": "Fail Login",
+                        "error":    err.Error(),
+                })
+        }</span>
+
+        <span class="cov0" title="0">token, err := middleware.CreateToken(int(users.ID), users.Name)
+        if err != nil </span><span class="cov0" title="0">{
+                return c.JSON(http.StatusBadRequest, map[string]interface{}{
+                        "messages": "Fail Login",
+                        "error":    err.Error(),
+                })
+        }</span>
+
+        <span class="cov0" title="0">userResponse := model.UserResponse{int(users.ID), users.Name, users.Email, token}
+
+        return c.JSON(http.StatusCreated, map[string]interface{}{
+                "messages": "Success create new user",
+                "user":     userResponse,
+        })</span>
+}
+</pre>
+		
+		</div>
+	</body>
+	<script>
+	(function() {
+		var files = document.getElementById('files');
+		var visible;
+		files.addEventListener('change', onChange, false);
+		function select(part) {
+			if (visible)
+				visible.style.display = 'none';
+			visible = document.getElementById(part);
+			if (!visible)
+				return;
+			files.value = part;
+			visible.style.display = 'block';
+			location.hash = part;
+		}
+		function onChange() {
+			select(files.value);
+			window.scrollTo(0, 0);
+		}
+		if (location.hash != "") {
+			select(location.hash.substr(1));
+		}
+		if (!visible) {
+			select("file0");
+		}
+	})();
+	</script>
+</html>

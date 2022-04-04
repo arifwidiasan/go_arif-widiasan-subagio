@@ -36,3 +36,18 @@ Berdasarkan hasil test yang dilakukan didapat bahwa testing yang dilakukan semua
 2. Implementasikan Unit Testing untuk seluruh endpoint yang telah kamu buat di Project RESTful API!
 3. Test case harus mencakup valid test dan invalid test.
 4. Coverage Report, coba tantang dirimu mencapai testing coverage >= 80%.
+
+Screenshot dan kode Program dari task diatas adalah :
+
+[book_controller_test.go](./praktikum/project/controller/book_controller_test.go)  
+[user_controller_test.go](./praktikum/project/controller/user_controller_test.go)
+
+**Saya sudah melakukan implementasi unit testing ke seluruh endpoint selain login, test yang saya dapat adalah 61% karena di controller ada file handler juga dan saya tidak tau bagaimana cara melakukan test handler. Saya juga sudah membuat coverage report di html**
+
+[cover.html](./praktikum/project/cover.html)
+
+<img src="./screenshots/rest_cli.jpg" width="700">
+
+<img src="./screenshots/rest_html1.jpg" width="700">
+
+<img src="./screenshots/rest_html2.jpg" width="700">
