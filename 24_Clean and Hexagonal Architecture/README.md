@@ -33,7 +33,7 @@ Pada task ini, ubah project yang ada di project berikut agar menerapkan prinsip-
 
 Hasil dari task tersebut adalah :
 
-[belajar-go-echo](./praktikum/belajar=go-echo)
+[belajar-go-echo](./praktikum/belajar-go-echo)
 
 <img src="./screenshots/run.jpg" width="700">
 
