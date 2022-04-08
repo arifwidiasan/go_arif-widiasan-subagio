@@ -35,7 +35,7 @@ Pada task ini, Setelah berhasil mengubah project di bawah ini menjadi Clean Arch
 
 Hasil dari task tersebut adalah :
 
-[belajar-go-echo](./praktikum/belajar-go-echo)
+[belajar-go-echo](./praktikum/belajar-go-echo)  
 [jwt.go](./praktikum/belajar-go-echo/middleware/jwt.go)
 
 1. Login untuk mendapat token
