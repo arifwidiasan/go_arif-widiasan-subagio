@@ -1,23 +1,17 @@
 package main
 
 import (
-	"belajar-go-echo/config"
-	c "belajar-go-echo/controller"
+	conf "belajar-go-echo/config"
+	rest "belajar-go-echo/handler/restecho"
 
 	"github.com/labstack/echo/v4"
 )
 
-func init() {
-	config.ConnectDB()
-	config.MigrateDB()
-}
-
 func main() {
-	app := echo.New()
-	apiUser := app.Group("/users")
-	apiLogin := app.Group("/login")
-	c.RegisterUserGroupAPI(apiUser)
-	c.RegisterLoginGroupAPI(apiLogin)
+	config := conf.InitConfiguration()
+	e := echo.New()
 
-	app.Start(":8080")
+	rest.RegisterUserGroupAPI(e, config)
+
+	e.Logger.Fatal(e.Start(":8080"))
 }
