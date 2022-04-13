@@ -37,6 +37,7 @@ Hasil dari task tersebut adalah :
 
 [belajar-go-echo](./praktikum/belajar-go-echo)  
 [jwt.go](./praktikum/belajar-go-echo/middleware/jwt.go)
+[jwt_token.go](./praktikum/belajar-go-echo/helper/jwt_token.go)
 
 1. Login untuk mendapat token
 <br><br><img src="./screenshots/token.jpg" width="700">
