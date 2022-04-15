@@ -42,6 +42,10 @@ Hasil dari pengerjaan task adalah :
 - Build your container
 <br><br><img src="./screenshots/4.jpg" width="700">
 
+- Push the image to docker registry
+<br><br><img src="./screenshots/5-1.jpg" width="700">
+<br><br><img src="./screenshots/5-2.jpg" width="700">
+
 - Deploy in your local machine
 <br><br><img src="./screenshots/6.jpg" width="700">
 
