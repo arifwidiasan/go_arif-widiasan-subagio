@@ -9,12 +9,12 @@ Dalam materi ini, yang dipelajari adalah :
 ### System & Software Deployment
 Continuous Integration adalah proses otomatis yang dilakukan untuk integrasi berbagai kode dari tempat yang berbeda untuk melakukan build atau melakukan test. Continuous Delivery & Development adalah proses untuk automasi deploy setiap build yang terverifikasi
 
-### Strategi Deployment
+### Cycle Continuous Integration
 
-<img src="./screenshots/cycle-1.jpg">
+<img src="./screenshots/cycle-1.jpg" width="600">
 
-### Simple Deployment Process
+### Cycle Continuous Delivery & Development
 
-<img src="./screenshots/cycle-2.jpg">
+<img src="./screenshots/cycle-2.jpg" width="600">
 
 ## Task
