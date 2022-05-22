@@ -37,4 +37,4 @@ Unit test yang dibuat harus memenuhi:
 
 Hasil dari task tersebut adalah :
 
-**Masih kesulitan untuk menerapkan mocking dan unit test di clean architecture**
+<br><br><img src="./screenshots/hasil.jpg" width="700">
