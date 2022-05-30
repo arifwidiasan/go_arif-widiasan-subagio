@@ -24,4 +24,6 @@ Continuous Integration adalah proses otomatis yang dilakukan untuk integrasi ber
 
 [CD](./praktikum/cd.yml)
 
+[Link Repository penerapan CI/CD](https://github.com/arifwidiasan/todo-app/actions)
+
 <img src="./screenshots/ci-cd.jpg" width="700">
